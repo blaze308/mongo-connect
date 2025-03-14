@@ -1,0 +1,82 @@
+{
+  "className": "Posts",
+  "fields": {
+    "objectId": {
+      "type": "String"
+    },
+    "createdAt": {
+      "type": "Date"
+    },
+    "updatedAt": {
+      "type": "Date"
+    },
+    "ACL": {
+      "type": "ACL"
+    },
+    "Author": {
+      "type": "Pointer",
+      "targetClass": "_User"
+    },
+    "list_of_images": {
+      "type": "Array"
+    },
+    "text": {
+      "type": "String"
+    },
+    "target_people": {
+      "type": "Array"
+    },
+    "target_people_ids": {
+      "type": "Array"
+    },
+    "AuthorId": {
+      "type": "String"
+    },
+    "numer_of_pictures": {
+      "type": "Number"
+    },
+    "likes": {
+      "type": "Array"
+    },
+    "LastLikeAuthor": {
+      "type": "Pointer",
+      "targetClass": "_User"
+    },
+    "video": {
+      "type": "File"
+    },
+    "thumbnail": {
+      "type": "File"
+    },
+    "viewers": {
+      "type": "Array"
+    },
+    "views": {
+      "type": "Number"
+    },
+    "text_color": {
+      "type": "String"
+    },
+    "background_color": {
+      "type": "String"
+    },
+    "saves": {
+      "type": "Array"
+    },
+    "comments": {
+      "type": "Array"
+    },
+    "aws_video": {
+      "type": "String",
+      "required": false
+    },
+    "aws_video_thumbnail": {
+      "type": "File",
+      "required": false
+    },
+    "hashtags": {
+      "type": "Array",
+      "required": false
+    }
+  }
+}

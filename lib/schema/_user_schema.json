@@ -1,0 +1,296 @@
+{
+  "className": "_User",
+  "fields": {
+    "objectId": {
+      "type": "String"
+    },
+    "createdAt": {
+      "type": "Date"
+    },
+    "updatedAt": {
+      "type": "Date"
+    },
+    "ACL": {
+      "type": "ACL"
+    },
+    "username": {
+      "type": "String"
+    },
+    "password": {
+      "type": "String"
+    },
+    "email": {
+      "type": "String"
+    },
+    "emailVerified": {
+      "type": "Boolean"
+    },
+    "authData": {
+      "type": "Object"
+    },
+    "user_state_in_app": {
+      "type": "String"
+    },
+    "lastOnline": {
+      "type": "Date"
+    },
+    "avatar": {
+      "type": "File"
+    },
+    "name": {
+      "type": "String"
+    },
+    "first_name": {
+      "type": "String"
+    },
+    "last_name": {
+      "type": "String"
+    },
+    "gender": {
+      "type": "String"
+    },
+    "birthday": {
+      "type": "Date"
+    },
+    "country": {
+      "type": "String"
+    },
+    "photo_verified": {
+      "type": "Boolean"
+    },
+    "country_code": {
+      "type": "String"
+    },
+    "country_dial_code": {
+      "type": "String"
+    },
+    "secondary_password": {
+      "type": "String"
+    },
+    "phone_number": {
+      "type": "String"
+    },
+    "phone_number_full": {
+      "type": "String"
+    },
+    "uid": {
+      "type": "Number"
+    },
+    "prefLocationType": {
+      "type": "Boolean"
+    },
+    "credit": {
+      "type": "Number"
+    },
+    "bio": {
+      "type": "String"
+    },
+    "has_password": {
+      "type": "Boolean"
+    },
+    "prefMinAge": {
+      "type": "Number"
+    },
+    "role": {
+      "type": "String"
+    },
+    "prefMaxAge": {
+      "type": "Number"
+    },
+    "post_ids_list": {
+      "type": "Array"
+    },
+    "following": {
+      "type": "Array"
+    },
+    "chat_with_users": {
+      "type": "Array"
+    },
+    "live_cover": {
+      "type": "File"
+    },
+    "list_of_images": {
+      "type": "Array"
+    },
+    "vibrate": {
+      "type": "Boolean"
+    },
+    "sound": {
+      "type": "Boolean"
+    },
+    "accept_calls": {
+      "type": "Boolean"
+    },
+    "message_notification_switch": {
+      "type": "Boolean"
+    },
+    "live_opening_alert": {
+      "type": "Boolean"
+    },
+    "fan_club_name": {
+      "type": "String"
+    },
+    "profile_language": {
+      "type": "String"
+    },
+    "accountDeleted": {
+      "type": "Boolean"
+    },
+    "followers": {
+      "type": "Array"
+    },
+    "blockedUsers": {
+      "type": "Array"
+    },
+    "blockedUsersIDs": {
+      "type": "Array"
+    },
+    "hasGeopoint": {
+      "type": "Boolean"
+    },
+    "geopoint": {
+      "type": "GeoPoint"
+    },
+    "reportedPostsID": {
+      "type": "Array"
+    },
+    "reportedPostReason": {
+      "type": "String"
+    },
+    "inviteQuestion": {
+      "type": "Boolean"
+    },
+    "invitedByUser": {
+      "type": "String"
+    },
+    "usdt_contact_address": {
+      "type": "String"
+    },
+    "select_payment_method": {
+      "type": "String"
+    },
+    "creditSent": {
+      "type": "Number"
+    },
+    "diamondsTotal": {
+      "type": "Number"
+    },
+    "diamonds": {
+      "type": "Number"
+    },
+    "normal_vip": {
+      "type": "Date"
+    },
+    "super_vip": {
+      "type": "Date"
+    },
+    "diamond_vip": {
+      "type": "Date"
+    },
+    "my_obtained_items": {
+      "type": "Array"
+    },
+    "using_avatar_frame": {
+      "type": "File"
+    },
+    "using_avatar_frame_id": {
+      "type": "String"
+    },
+    "can_use_using_avatar_frame": {
+      "type": "Boolean"
+    },
+    "using_party_theme": {
+      "type": "File"
+    },
+    "using_party_theme_id": {
+      "type": "String"
+    },
+    "can_use_using_party_theme": {
+      "type": "Boolean"
+    },
+    "dailyGift": {
+      "type": "Date"
+    },
+    "email_public": {
+      "type": "String"
+    },
+    "using_entrance_effect": {
+      "type": "File"
+    },
+    "using_entrance_effect_id": {
+      "type": "String"
+    },
+    "can_use_entrance_effect": {
+      "type": "Boolean"
+    },
+    "platformSpeakerNumber": {
+      "type": "Number",
+      "required": false,
+      "defaultValue": 0
+    },
+    "mysterious_man": {
+      "type": "Boolean"
+    },
+    "mystery_man": {
+      "type": "Boolean"
+    },
+    "invisible_visitor": {
+      "type": "Boolean"
+    },
+    "reported_comments": {
+      "type": "Array"
+    },
+    "currency_code": {
+      "type": "String"
+    },
+    "currency_symbiol": {
+      "type": "String"
+    },
+    "app_language": {
+      "type": "Array"
+    }
+  },
+  "classLevelPermissions": {
+    "find": {
+      "*": true
+    },
+    "count": {
+      "*": true
+    },
+    "get": {
+      "*": true
+    },
+    "create": {
+      "*": true
+    },
+    "update": {
+      "*": true
+    },
+    "delete": {
+      "*": true
+    },
+    "addField": {
+      "*": true
+    },
+    "protectedFields": {
+      "*": []
+    }
+  },
+  "indexes": {
+    "_id_": {
+      "_id": 1
+    },
+    "username_1": {
+      "username": 1
+    },
+    "case_insensitive_username": {
+      "username": 1
+    },
+    "email_1": {
+      "email": 1
+    },
+    "case_insensitive_email": {
+      "email": 1
+    }
+  }
+}
