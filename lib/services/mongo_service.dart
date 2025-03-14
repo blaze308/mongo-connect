@@ -1,19 +1,16 @@
 // ignore_for_file: constant_identifier_names
 
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:mongo_connect/models/user_model.dart';
 import 'package:mongo_dart/mongo_dart.dart';
 import 'dart:developer' as developer;
 import '../models/post_model.dart';
 
 class MongoDBService {
-  // Uncomment the correct URL as needed.
-  // static const String MONGO_URL = "mongodb+srv://admin:admin@e2e-test-db.vkml0lr.mongodb.net/";
-  static const String MONGO_URL =
-      "mongodb+srv://admin:admin@e2e-test-db.vkml0lr.mongodb.net/ancientflip-test-db?retryWrites=true&w=majority";
-
-  static const String USER_COLLECTION = "users";
-  static const String POST_COLLECTION = "posts";
+  final String mongoUrl = dotenv.get('mongoUrl');
+  final String userCollection = dotenv.get('USER_COLLECTION');
+  final String postCollection = dotenv.get('POST_COLLECTION');
 
   late Db _db;
   late DbCollection _users;
@@ -31,10 +28,10 @@ class MongoDBService {
   // Initialize the database connection
   Future<void> connect() async {
     try {
-      _db = await Db.create(MONGO_URL);
+      _db = await Db.create(mongoUrl);
       await _db.open();
-      _users = _db.collection(USER_COLLECTION);
-      _posts = _db.collection(POST_COLLECTION); // ✅ Add posts collection
+      _users = _db.collection(userCollection);
+      _posts = _db.collection(postCollection); // ✅ Add posts collection
       developer.log('Connected to MongoDB');
       developer.log("_users db : ${_users.db}");
       developer.log("_users collection : ${_users.collectionName}");
@@ -188,8 +185,8 @@ class MongoDBService {
 
   // ✅ Provide access to collections dynamically
   DbCollection getCollection(String collectionName) {
-    if (collectionName == USER_COLLECTION) return _users;
-    if (collectionName == POST_COLLECTION) return _posts;
+    if (collectionName == userCollection) return _users;
+    if (collectionName == postCollection) return _posts;
     throw Exception("Collection '$collectionName' not found");
   }
 }
